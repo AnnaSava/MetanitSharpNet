@@ -45,6 +45,9 @@ namespace MetanitSharpNet
                     case 'p':
                         postRequest();
                         break;
+                    case 'e':
+                        RequestTo404();
+                        break;
                     case 'x': return;
                 }
                 Console.ReadKey();
@@ -61,6 +64,7 @@ namespace MetanitSharpNet
             Console.WriteLine("C - credentials");
             Console.WriteLine("H - headers");
             Console.WriteLine("P - отправка данных");
+            Console.WriteLine("E - обработка ошибок");
         }
 
         static void usingWebClient()
@@ -239,6 +243,36 @@ namespace MetanitSharpNet
             }
             response.Close();
             Console.WriteLine("Запрос GET выполнен...");
+        }
+
+        private static void RequestTo404()
+        {
+            try
+            {
+                WebRequest request = WebRequest.Create("http://localhost:1755/Home/PostData404");
+                using (WebResponse response = request.GetResponse())
+                {
+                    using (Stream stream = response.GetResponseStream())
+                    {
+                        using (StreamReader reader = new StreamReader(stream))
+                        {
+                            Console.WriteLine(reader.ReadToEnd());
+                        }
+                    }
+                }
+            }
+            catch (WebException ex)
+            {
+                // получаем статус исключения
+                WebExceptionStatus status = ex.Status;
+
+                if (status == WebExceptionStatus.ProtocolError)
+                {
+                    HttpWebResponse httpResponse = (HttpWebResponse)ex.Response;
+                    Console.WriteLine("Статусный код ошибки: {0} - {1}",
+                            (int)httpResponse.StatusCode, httpResponse.StatusCode);
+                }
+            }
         }
     }
 }
