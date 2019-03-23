@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28307.329
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MetanitSharpNet", "MetanitSharpNet\MetanitSharpNet.csproj", "{3A70109E-77C4-4D09-914E-46DE66BE3758}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MetanitSharpNet.MVC", "MetanitSharpNet.MVC\MetanitSharpNet.MVC.csproj", "{42EBCEE7-E1AB-4C73-9186-DCA327AA719C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{3A70109E-77C4-4D09-914E-46DE66BE3758}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3A70109E-77C4-4D09-914E-46DE66BE3758}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3A70109E-77C4-4D09-914E-46DE66BE3758}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42EBCEE7-E1AB-4C73-9186-DCA327AA719C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42EBCEE7-E1AB-4C73-9186-DCA327AA719C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42EBCEE7-E1AB-4C73-9186-DCA327AA719C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42EBCEE7-E1AB-4C73-9186-DCA327AA719C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
