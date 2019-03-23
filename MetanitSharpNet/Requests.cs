@@ -4,6 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Net;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace MetanitSharpNet
@@ -59,7 +60,7 @@ namespace MetanitSharpNet
             Console.WriteLine("R - HttpWebRequest");
             Console.WriteLine("C - credentials");
             Console.WriteLine("H - headers");
-            Console.WriteLine("P - отправка данных в POST-запросе");
+            Console.WriteLine("P - отправка данных");
         }
 
         static void usingWebClient()
@@ -157,6 +158,10 @@ namespace MetanitSharpNet
         static async void postRequest()
         {
             await PostRequestAsync();
+            Thread.Sleep(2000);
+            await PostRequestAsync2();
+            Thread.Sleep(2000);
+            await GetRequest();
         }
 
         private static async Task PostRequestAsync()
@@ -188,6 +193,52 @@ namespace MetanitSharpNet
             }
             response.Close();
             Console.WriteLine("Запрос выполнен...");
+        }
+
+        private static async Task PostRequestAsync2()
+        {
+            WebRequest request = WebRequest.Create("http://localhost:1755/Home/PostData2");
+            request.Method = "POST"; // для отправки используется метод Post
+                                     // данные для отправки
+            string data = "sName=Иван Иванов&age=31";
+            // преобразуем данные в массив байтов
+            byte[] byteArray = System.Text.Encoding.UTF8.GetBytes(data);
+            // устанавливаем тип содержимого - параметр ContentType
+            request.ContentType = "application/x-www-form-urlencoded";
+            // Устанавливаем заголовок Content-Length запроса - свойство ContentLength
+            request.ContentLength = byteArray.Length;
+
+            //записываем данные в поток запроса
+            using (Stream dataStream = request.GetRequestStream())
+            {
+                dataStream.Write(byteArray, 0, byteArray.Length);
+            }
+
+            WebResponse response = await request.GetResponseAsync();
+            using (Stream stream = response.GetResponseStream())
+            {
+                using (StreamReader reader = new StreamReader(stream))
+                {
+                    Console.WriteLine(reader.ReadToEnd());
+                }
+            }
+            response.Close();
+            Console.WriteLine("Запрос 2 выполнен...");
+        }
+
+        private static async Task GetRequest()
+        {
+            WebRequest request = WebRequest.Create("http://localhost:1755/Home/GetData?sName=Иван Иванов&age=31");
+            WebResponse response = await request.GetResponseAsync();
+            using (Stream stream = response.GetResponseStream())
+            {
+                using (StreamReader reader = new StreamReader(stream))
+                {
+                    Console.WriteLine(reader.ReadToEnd());
+                }
+            }
+            response.Close();
+            Console.WriteLine("Запрос GET выполнен...");
         }
     }
 }

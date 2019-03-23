@@ -19,6 +19,17 @@ namespace MetanitSharpNet.MVC.Controllers
             return "Параметр запроса: " + sName;
         }
 
+        [HttpPost]
+        public string PostData2(string sName, int age)
+        {
+            return "Параметры запроса: " + sName + " " + age.ToString();
+        }
+
+        public string GetData(string sName, int age)
+        {
+            return "Параметры запроса: " + sName + " " + age.ToString();
+        }
+
         public ActionResult About()
         {
             ViewBag.Message = "Your application description page.";
