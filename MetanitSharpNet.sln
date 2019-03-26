@@ -17,6 +17,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TcpClientApp", "TcpClientAp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TcpListenerApp", "TcpListenerApp\TcpListenerApp.csproj", "{3FF0E5F3-70EF-4BAC-A7DB-3FCD09F85C9B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleTcpClient", "ConsoleTcpClient\ConsoleTcpClient.csproj", "{54131EA4-82F0-4820-9DD0-867DFBA3077C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleTcpServer", "ConsoleTcpServer\ConsoleTcpServer.csproj", "{322E6CD2-A38F-482F-8C7B-1369DB34633A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +55,14 @@ Global
 		{3FF0E5F3-70EF-4BAC-A7DB-3FCD09F85C9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3FF0E5F3-70EF-4BAC-A7DB-3FCD09F85C9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3FF0E5F3-70EF-4BAC-A7DB-3FCD09F85C9B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{54131EA4-82F0-4820-9DD0-867DFBA3077C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54131EA4-82F0-4820-9DD0-867DFBA3077C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54131EA4-82F0-4820-9DD0-867DFBA3077C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54131EA4-82F0-4820-9DD0-867DFBA3077C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{322E6CD2-A38F-482F-8C7B-1369DB34633A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{322E6CD2-A38F-482F-8C7B-1369DB34633A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{322E6CD2-A38F-482F-8C7B-1369DB34633A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{322E6CD2-A38F-482F-8C7B-1369DB34633A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -26,6 +26,9 @@ namespace MetanitSharpNet
                     case 't':
                         tcp();
                         break;
+                    case 'h':
+                        threadTcp();
+                        break;
                     case 'x': return;
                 }
                 Console.ReadKey();
@@ -36,6 +39,7 @@ namespace MetanitSharpNet
         {
             Console.WriteLine("Нажмите клавишу для вывода информации");
             Console.WriteLine("T - TCP сервер и клиент");
+            Console.WriteLine("H - Многопоточное клиент-серверное приложение TCP");
         }
 
         static void tcp()
@@ -43,6 +47,15 @@ namespace MetanitSharpNet
             Process.Start("TcpListenerApp.exe");
             Thread.Sleep(1000);
             Process.Start("TcpClientApp.exe");
+        }
+
+        static void threadTcp()
+        {
+            Process.Start("ConsoleTcpServer.exe");
+            Thread.Sleep(1000);
+            Process.Start("ConsoleTcpClient.exe");
+            Thread.Sleep(1000);
+            Process.Start("ConsoleTcpClient.exe");
         }
     }
 }
