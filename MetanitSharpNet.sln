@@ -13,6 +13,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SocketTcpServer", "SocketTc
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SocketUdpClient", "SocketUdpClient\SocketUdpClient.csproj", "{6EDE9624-636C-40B7-AC2E-433D6DA2CEDA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TcpClientApp", "TcpClientApp\TcpClientApp.csproj", "{93926997-3984-4602-8CBA-129688AF5D2F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TcpListenerApp", "TcpListenerApp\TcpListenerApp.csproj", "{3FF0E5F3-70EF-4BAC-A7DB-3FCD09F85C9B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +43,14 @@ Global
 		{6EDE9624-636C-40B7-AC2E-433D6DA2CEDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6EDE9624-636C-40B7-AC2E-433D6DA2CEDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6EDE9624-636C-40B7-AC2E-433D6DA2CEDA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{93926997-3984-4602-8CBA-129688AF5D2F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93926997-3984-4602-8CBA-129688AF5D2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93926997-3984-4602-8CBA-129688AF5D2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93926997-3984-4602-8CBA-129688AF5D2F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3FF0E5F3-70EF-4BAC-A7DB-3FCD09F85C9B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3FF0E5F3-70EF-4BAC-A7DB-3FCD09F85C9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3FF0E5F3-70EF-4BAC-A7DB-3FCD09F85C9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3FF0E5F3-70EF-4BAC-A7DB-3FCD09F85C9B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

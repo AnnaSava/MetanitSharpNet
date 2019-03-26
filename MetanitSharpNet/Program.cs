@@ -24,6 +24,9 @@ namespace MetanitSharpNet
                     case 'r':
                         Requests.Run();
                         break;
+                    case 't':
+                        TcpProtocol.Run();
+                        break;
                 }
             }
         }
@@ -32,6 +35,7 @@ namespace MetanitSharpNet
         {
             Console.WriteLine("Нажмите клавишу для выбора раздела");
             Console.WriteLine("R - отправка запросов");
+            Console.WriteLine("T - TCP");
         }
     }
 }
