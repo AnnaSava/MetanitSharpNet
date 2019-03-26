@@ -29,6 +29,9 @@ namespace MetanitSharpNet
                     case 'h':
                         threadTcp();
                         break;
+                    case 'c':
+                        tcpChat();
+                        break;
                     case 'x': return;
                 }
                 Console.ReadKey();
@@ -40,6 +43,7 @@ namespace MetanitSharpNet
             Console.WriteLine("Нажмите клавишу для вывода информации");
             Console.WriteLine("T - TCP сервер и клиент");
             Console.WriteLine("H - Многопоточное клиент-серверное приложение TCP");
+            Console.WriteLine("С - TCP-чат");
         }
 
         static void tcp()
@@ -56,6 +60,15 @@ namespace MetanitSharpNet
             Process.Start("ConsoleTcpClient.exe");
             Thread.Sleep(1000);
             Process.Start("ConsoleTcpClient.exe");
+        }
+
+        static void tcpChat()
+        {
+            Process.Start("ChatServer.exe");
+            Thread.Sleep(1000);
+            Process.Start("ChatClient.exe");
+            Thread.Sleep(1000);
+            Process.Start("ChatClient.exe");
         }
     }
 }
