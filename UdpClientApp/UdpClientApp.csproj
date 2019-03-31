@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{3A70109E-77C4-4D09-914E-46DE66BE3758}</ProjectGuid>
+    <ProjectGuid>{A735D17F-AAA1-4AEC-A1DE-01C13F61D1A0}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>MetanitSharpNet</RootNamespace>
-    <AssemblyName>MetanitSharpNet</AssemblyName>
+    <RootNamespace>UdpClientApp</RootNamespace>
+    <AssemblyName>UdpClientApp</AssemblyName>
     <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -18,7 +18,7 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>bin\Debug\</OutputPath>
+    <OutputPath>..\MetanitSharpNet\bin\Debug\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -45,10 +45,6 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Requests.cs" />
-    <Compile Include="Sockets.cs" />
-    <Compile Include="UdpProtocol.cs" />
-    <Compile Include="TcpProtocol.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
