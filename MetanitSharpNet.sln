@@ -27,6 +27,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChatClient", "ChatClient\Ch
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UdpClientApp", "UdpClientApp\UdpClientApp.csproj", "{A735D17F-AAA1-4AEC-A1DE-01C13F61D1A0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MulticastApp", "MulticastApp\MulticastApp.csproj", "{1E8B0B80-71DC-4E1C-A8F5-AAE77D12757F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -81,6 +83,10 @@ Global
 		{A735D17F-AAA1-4AEC-A1DE-01C13F61D1A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A735D17F-AAA1-4AEC-A1DE-01C13F61D1A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A735D17F-AAA1-4AEC-A1DE-01C13F61D1A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1E8B0B80-71DC-4E1C-A8F5-AAE77D12757F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E8B0B80-71DC-4E1C-A8F5-AAE77D12757F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E8B0B80-71DC-4E1C-A8F5-AAE77D12757F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E8B0B80-71DC-4E1C-A8F5-AAE77D12757F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
