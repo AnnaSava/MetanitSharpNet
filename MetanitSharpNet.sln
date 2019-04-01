@@ -31,6 +31,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MulticastApp", "MulticastAp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UdpChat", "UdpChat\UdpChat.csproj", "{C85FAFEE-DD8B-4491-861C-A756417C25F0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TxtServer", "TxtServer\TxtServer.csproj", "{52FC409D-4DBB-41EB-A9E8-B8F3E75013D4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TxtClient", "TxtClient\TxtClient.csproj", "{2258EC69-8B3D-4AEE-AA20-E8594F6F5677}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -93,6 +97,14 @@ Global
 		{C85FAFEE-DD8B-4491-861C-A756417C25F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C85FAFEE-DD8B-4491-861C-A756417C25F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C85FAFEE-DD8B-4491-861C-A756417C25F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{52FC409D-4DBB-41EB-A9E8-B8F3E75013D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52FC409D-4DBB-41EB-A9E8-B8F3E75013D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52FC409D-4DBB-41EB-A9E8-B8F3E75013D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52FC409D-4DBB-41EB-A9E8-B8F3E75013D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2258EC69-8B3D-4AEE-AA20-E8594F6F5677}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2258EC69-8B3D-4AEE-AA20-E8594F6F5677}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2258EC69-8B3D-4AEE-AA20-E8594F6F5677}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2258EC69-8B3D-4AEE-AA20-E8594F6F5677}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

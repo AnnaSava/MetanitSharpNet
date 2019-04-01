@@ -33,6 +33,9 @@ namespace MetanitSharpNet
                     case 'u':
                         UdpProtocol.Run();
                         break;
+                    case 'm':
+                        Misc.Run();
+                        break;
                 }
             }
         }
@@ -44,6 +47,7 @@ namespace MetanitSharpNet
             Console.WriteLine("S - сокеты");
             Console.WriteLine("T - TCP");
             Console.WriteLine("U - UDP");
+            Console.WriteLine("М - разное");
         }
     }
 }
