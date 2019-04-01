@@ -35,6 +35,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TxtServer", "TxtServer\TxtS
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TxtClient", "TxtClient\TxtClient.csproj", "{2258EC69-8B3D-4AEE-AA20-E8594F6F5677}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinanceServer", "FinanceServer\FinanceServer.csproj", "{8BEAE72F-41D5-4985-81A2-FF05F87EB532}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinanceClient", "FinanceClient\FinanceClient.csproj", "{BCEAE4EF-EC63-445D-AB9C-7AFB44B7BF18}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -105,6 +109,14 @@ Global
 		{2258EC69-8B3D-4AEE-AA20-E8594F6F5677}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2258EC69-8B3D-4AEE-AA20-E8594F6F5677}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2258EC69-8B3D-4AEE-AA20-E8594F6F5677}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8BEAE72F-41D5-4985-81A2-FF05F87EB532}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8BEAE72F-41D5-4985-81A2-FF05F87EB532}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8BEAE72F-41D5-4985-81A2-FF05F87EB532}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8BEAE72F-41D5-4985-81A2-FF05F87EB532}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BCEAE4EF-EC63-445D-AB9C-7AFB44B7BF18}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BCEAE4EF-EC63-445D-AB9C-7AFB44B7BF18}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BCEAE4EF-EC63-445D-AB9C-7AFB44B7BF18}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BCEAE4EF-EC63-445D-AB9C-7AFB44B7BF18}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

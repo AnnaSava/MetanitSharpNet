@@ -26,6 +26,9 @@ namespace MetanitSharpNet
                     case 's':
                         streams();
                         break;
+                    case 'b':
+                        binary();
+                        break;
                     case 'x': return;
                 }
                 Console.ReadKey();
@@ -35,7 +38,8 @@ namespace MetanitSharpNet
         static void printMenu()
         {
             Console.WriteLine("Нажмите клавишу для вывода информации");
-            Console.WriteLine("S - потоки");
+            Console.WriteLine("S - потоки текстовых данных");
+            Console.WriteLine("B - потоки бинарных данных");
         }
 
         static void streams()
@@ -43,6 +47,13 @@ namespace MetanitSharpNet
             Process.Start("TxtServer.exe");
             Thread.Sleep(1000);
             Process.Start("TxtClient.exe");
+        }
+
+        static void binary()
+        {
+            Process.Start("FinanceServer.exe");
+            Thread.Sleep(1000);
+            Process.Start("FinanceClient.exe");
         }
     }
 }
