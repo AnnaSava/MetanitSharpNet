@@ -29,6 +29,9 @@ namespace MetanitSharpNet
                     case 'm':
                         multicast();
                         break;
+                    case 'c':
+                        chat();
+                        break;
                     case 'x': return;
                 }
                 Console.ReadKey();
@@ -40,6 +43,7 @@ namespace MetanitSharpNet
             Console.WriteLine("Нажмите клавишу для вывода информации");
             Console.WriteLine("U - UDP-чат");
             Console.WriteLine("M - широковещательная рассылка");
+            Console.WriteLine("C - оконный чат");
         }
 
         static void udp()
@@ -52,6 +56,11 @@ namespace MetanitSharpNet
         static void multicast()
         {
             Process.Start("MulticastApp.exe");
+        }
+
+        static void chat()
+        {
+            Process.Start("UdpChat.exe");
         }
     }
 }
