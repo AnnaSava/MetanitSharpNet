@@ -36,6 +36,9 @@ namespace MetanitSharpNet
                     case 'm':
                         Misc.Run();
                         break;
+                    case 'h':
+                        HttpProtocol.Run();
+                        break;
                 }
             }
         }
@@ -48,6 +51,7 @@ namespace MetanitSharpNet
             Console.WriteLine("T - TCP");
             Console.WriteLine("U - UDP");
             Console.WriteLine("М - разное");
+            Console.WriteLine("H - HTTP");
         }
     }
 }
