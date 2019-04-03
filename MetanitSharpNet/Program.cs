@@ -39,6 +39,9 @@ namespace MetanitSharpNet
                     case 'h':
                         HttpProtocol.Run();
                         break;
+                    case 'f':
+                        FtpProtocol.Run();
+                        break;
                 }
             }
         }
@@ -52,6 +55,7 @@ namespace MetanitSharpNet
             Console.WriteLine("U - UDP");
             Console.WriteLine("М - разное");
             Console.WriteLine("H - HTTP");
+            Console.WriteLine("F - FTP");
         }
     }
 }
