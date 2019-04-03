@@ -29,19 +29,5 @@ namespace MetanitSharpNet.MVC.Controllers
         {
             return "Параметры запроса: " + sName + " " + age.ToString();
         }
-
-        public ActionResult About()
-        {
-            ViewBag.Message = "Your application description page.";
-
-            return View();
-        }
-
-        public ActionResult Contact()
-        {
-            ViewBag.Message = "Your contact page.";
-
-            return View();
-        }
     }
 }
